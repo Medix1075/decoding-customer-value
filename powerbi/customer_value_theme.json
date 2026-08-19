@@ -1,0 +1,19 @@
+{
+  "name": "Decoding Customer Value — Executive",
+  "dataColors": ["#E8A33D", "#4FD1C5", "#8B8FE8", "#E8697D", "#6B7280", "#D1D5DB"],
+  "background": "#0F1115",
+  "foreground": "#EDEFF3",
+  "tableAccent": "#E8A33D",
+  "good": "#4FD1C5",
+  "neutral": "#E8A33D",
+  "bad": "#E8697D",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [{"show": true, "fontFamily": "Segoe UI", "fontSize": 12, "color": {"solid": {"color": "#EDEFF3"}}}],
+        "background": [{"show": true, "color": {"solid": {"color": "#171A21"}}, "transparency": 0}],
+        "visualHeader": [{"show": false}]
+      }
+    }
+  }
+}
