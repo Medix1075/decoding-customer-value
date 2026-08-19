@@ -1,0 +1,61 @@
+-- Decoding Customer Value — Power BI semantic measures
+
+Customers = DISTINCTCOUNT('customer_features'[Customer ID])
+
+Total Spend = SUM('customer_features'[Purchase Amount (USD)])
+
+Average Spend = AVERAGE('customer_features'[Purchase Amount (USD)])
+
+Annualized Customer Value = SUM('customer_features'[est_annual_value])
+
+Avg Annualized Value = AVERAGE('customer_features'[est_annual_value])
+
+Avg Customer Value Score = AVERAGE('customer_features'[customer_value_score])
+
+Avg Tenure Orders = AVERAGE('customer_features'[tenure_orders])
+
+Avg Satisfaction = AVERAGE('customer_features'[satisfaction_score])
+
+Promo Dependent Customers = CALCULATE([Customers], 'customer_features'[is_promo_dependent] = TRUE())
+
+Promo Dependency % = DIVIDE([Promo Dependent Customers], [Customers])
+
+Organic High Value Customers = CALCULATE([Customers], 'customer_features'[is_organic_high_value] = TRUE())
+
+Organic High Value % = DIVIDE([Organic High Value Customers], [Customers])
+
+At Risk Dissatisfied Customers = CALCULATE([Customers], 'customer_features'[is_at_risk_dissatisfied] = TRUE())
+
+At Risk Dissatisfied % = DIVIDE([At Risk Dissatisfied Customers], [Customers])
+
+Platinum Customers = CALCULATE([Customers], 'customer_features'[value_tier] = "Platinum")
+
+Gold Customers = CALCULATE([Customers], 'customer_features'[value_tier] = "Gold")
+
+Silver Customers = CALCULATE([Customers], 'customer_features'[value_tier] = "Silver")
+
+Bronze Customers = CALCULATE([Customers], 'customer_features'[value_tier] = "Bronze")
+
+Platinum Share = DIVIDE([Platinum Customers], [Customers])
+
+Gold Plus Customers = CALCULATE([Customers], 'customer_features'[value_tier] IN {"Gold", "Platinum"})
+
+Gold Plus Share = DIVIDE([Gold Plus Customers], [Customers])
+
+Avg Platinum Annualized Value = CALCULATE([Avg Annualized Value], 'customer_features'[value_tier] = "Platinum")
+
+Avg Gold Annualized Value = CALCULATE([Avg Annualized Value], 'customer_features'[value_tier] = "Gold")
+
+Avg Silver Annualized Value = CALCULATE([Avg Annualized Value], 'customer_features'[value_tier] = "Silver")
+
+Avg Bronze Annualized Value = CALCULATE([Avg Annualized Value], 'customer_features'[value_tier] = "Bronze")
+
+Promo Dependent Annualized Value = CALCULATE([Avg Annualized Value], 'customer_features'[is_promo_dependent] = TRUE())
+
+Organic Annualized Value = CALCULATE([Avg Annualized Value], 'customer_features'[is_promo_dependent] = FALSE())
+
+Promo vs Organic Value Gap = [Organic Annualized Value] - [Promo Dependent Annualized Value]
+
+Avg Previous Purchases = AVERAGE('customer_features'[Previous Purchases])
+
+Customer Value Rank = RANKX(ALLSELECTED('customer_features'[Customer ID]), [Avg Annualized Value],, DESC, Dense)
