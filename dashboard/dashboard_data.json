@@ -1,0 +1,536 @@
+{
+  "pyramid": [
+    {
+      "value_tier": "Platinum",
+      "customers": 187,
+      "avg_annual_value": 3050.78,
+      "avg_tenure": 43.0,
+      "pct_promo": 42.0,
+      "avg_satisfaction": 4.35
+    },
+    {
+      "value_tier": "Gold",
+      "customers": 1356,
+      "avg_annual_value": 1795.34,
+      "avg_tenure": 30.22,
+      "pct_promo": 44.0,
+      "avg_satisfaction": 3.91
+    },
+    {
+      "value_tier": "Silver",
+      "customers": 1771,
+      "avg_annual_value": 562.16,
+      "avg_tenure": 23.65,
+      "pct_promo": 43.0,
+      "avg_satisfaction": 3.69
+    },
+    {
+      "value_tier": "Bronze",
+      "customers": 586,
+      "avg_annual_value": 119.03,
+      "avg_tenure": 13.58,
+      "pct_promo": 41.0,
+      "avg_satisfaction": 3.4
+    }
+  ],
+  "segment": [
+    {
+      "value_tier": "Bronze",
+      "is_promo_dependent": false,
+      "customers": 344,
+      "avg_tenure": 13.3,
+      "avg_annual_value": 121.27
+    },
+    {
+      "value_tier": "Bronze",
+      "is_promo_dependent": true,
+      "customers": 242,
+      "avg_tenure": 13.98,
+      "avg_annual_value": 115.85
+    },
+    {
+      "value_tier": "Gold",
+      "is_promo_dependent": false,
+      "customers": 764,
+      "avg_tenure": 29.71,
+      "avg_annual_value": 1793.77
+    },
+    {
+      "value_tier": "Gold",
+      "is_promo_dependent": true,
+      "customers": 592,
+      "avg_tenure": 30.89,
+      "avg_annual_value": 1797.37
+    },
+    {
+      "value_tier": "Platinum",
+      "is_promo_dependent": false,
+      "customers": 108,
+      "avg_tenure": 43.37,
+      "avg_annual_value": 3016.32
+    },
+    {
+      "value_tier": "Platinum",
+      "is_promo_dependent": true,
+      "customers": 79,
+      "avg_tenure": 42.49,
+      "avg_annual_value": 3097.88
+    },
+    {
+      "value_tier": "Silver",
+      "is_promo_dependent": false,
+      "customers": 1007,
+      "avg_tenure": 23.58,
+      "avg_annual_value": 584.35
+    },
+    {
+      "value_tier": "Silver",
+      "is_promo_dependent": true,
+      "customers": 764,
+      "avg_tenure": 23.75,
+      "avg_annual_value": 532.92
+    }
+  ],
+  "states": [
+    {
+      "Location": "Alabama",
+      "customers": 89,
+      "avg_spend": 59.11,
+      "pct_promo": 40.0,
+      "avg_value_score": 52.73,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Alaska",
+      "customers": 72,
+      "avg_spend": 67.6,
+      "pct_promo": 40.0,
+      "avg_value_score": 55.43,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Arizona",
+      "customers": 65,
+      "avg_spend": 66.55,
+      "pct_promo": 34.0,
+      "avg_value_score": 52.77,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Arkansas",
+      "customers": 79,
+      "avg_spend": 61.11,
+      "pct_promo": 47.0,
+      "avg_value_score": 50.45,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "California",
+      "customers": 95,
+      "avg_spend": 59.0,
+      "pct_promo": 42.0,
+      "avg_value_score": 49.16,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Colorado",
+      "customers": 75,
+      "avg_spend": 56.29,
+      "pct_promo": 41.0,
+      "avg_value_score": 47.4,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Connecticut",
+      "customers": 78,
+      "avg_spend": 54.18,
+      "pct_promo": 33.0,
+      "avg_value_score": 45.49,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Delaware",
+      "customers": 86,
+      "avg_spend": 55.33,
+      "pct_promo": 45.0,
+      "avg_value_score": 49.08,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Florida",
+      "customers": 68,
+      "avg_spend": 55.85,
+      "pct_promo": 46.0,
+      "avg_value_score": 47.28,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Georgia",
+      "customers": 79,
+      "avg_spend": 58.8,
+      "pct_promo": 41.0,
+      "avg_value_score": 49.96,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Hawaii",
+      "customers": 65,
+      "avg_spend": 57.72,
+      "pct_promo": 49.0,
+      "avg_value_score": 54.64,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Idaho",
+      "customers": 93,
+      "avg_spend": 60.08,
+      "pct_promo": 41.0,
+      "avg_value_score": 48.73,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Illinois",
+      "customers": 92,
+      "avg_spend": 61.05,
+      "pct_promo": 40.0,
+      "avg_value_score": 52.79,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Indiana",
+      "customers": 79,
+      "avg_spend": 58.92,
+      "pct_promo": 57.0,
+      "avg_value_score": 51.28,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Iowa",
+      "customers": 69,
+      "avg_spend": 60.88,
+      "pct_promo": 52.0,
+      "avg_value_score": 52.78,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Kansas",
+      "customers": 63,
+      "avg_spend": 54.56,
+      "pct_promo": 24.0,
+      "avg_value_score": 48.75,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Kentucky",
+      "customers": 79,
+      "avg_spend": 55.72,
+      "pct_promo": 43.0,
+      "avg_value_score": 50.98,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Louisiana",
+      "customers": 84,
+      "avg_spend": 57.71,
+      "pct_promo": 42.0,
+      "avg_value_score": 50.74,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Maine",
+      "customers": 77,
+      "avg_spend": 56.99,
+      "pct_promo": 35.0,
+      "avg_value_score": 47.87,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Maryland",
+      "customers": 86,
+      "avg_spend": 55.76,
+      "pct_promo": 44.0,
+      "avg_value_score": 50.39,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Massachusetts",
+      "customers": 72,
+      "avg_spend": 60.89,
+      "pct_promo": 49.0,
+      "avg_value_score": 51.0,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Michigan",
+      "customers": 73,
+      "avg_spend": 62.1,
+      "pct_promo": 40.0,
+      "avg_value_score": 49.09,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Minnesota",
+      "customers": 88,
+      "avg_spend": 56.56,
+      "pct_promo": 44.0,
+      "avg_value_score": 51.08,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Mississippi",
+      "customers": 80,
+      "avg_spend": 61.04,
+      "pct_promo": 48.0,
+      "avg_value_score": 50.73,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Missouri",
+      "customers": 81,
+      "avg_spend": 57.91,
+      "pct_promo": 49.0,
+      "avg_value_score": 49.84,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Montana",
+      "customers": 96,
+      "avg_spend": 60.25,
+      "pct_promo": 38.0,
+      "avg_value_score": 49.21,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Nebraska",
+      "customers": 87,
+      "avg_spend": 59.45,
+      "pct_promo": 43.0,
+      "avg_value_score": 48.58,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Nevada",
+      "customers": 87,
+      "avg_spend": 63.38,
+      "pct_promo": 47.0,
+      "avg_value_score": 50.76,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "New Hampshire",
+      "customers": 71,
+      "avg_spend": 59.42,
+      "pct_promo": 44.0,
+      "avg_value_score": 48.1,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "New Jersey",
+      "customers": 67,
+      "avg_spend": 56.75,
+      "pct_promo": 40.0,
+      "avg_value_score": 48.38,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "New Mexico",
+      "customers": 81,
+      "avg_spend": 61.9,
+      "pct_promo": 44.0,
+      "avg_value_score": 50.66,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "New York",
+      "customers": 87,
+      "avg_spend": 60.43,
+      "pct_promo": 41.0,
+      "avg_value_score": 51.3,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "North Carolina",
+      "customers": 78,
+      "avg_spend": 60.79,
+      "pct_promo": 45.0,
+      "avg_value_score": 51.99,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "North Dakota",
+      "customers": 83,
+      "avg_spend": 62.89,
+      "pct_promo": 46.0,
+      "avg_value_score": 47.82,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Ohio",
+      "customers": 77,
+      "avg_spend": 60.38,
+      "pct_promo": 44.0,
+      "avg_value_score": 51.12,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Oklahoma",
+      "customers": 75,
+      "avg_spend": 58.35,
+      "pct_promo": 48.0,
+      "avg_value_score": 47.95,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Oregon",
+      "customers": 74,
+      "avg_spend": 57.34,
+      "pct_promo": 51.0,
+      "avg_value_score": 51.68,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Pennsylvania",
+      "customers": 74,
+      "avg_spend": 66.57,
+      "pct_promo": 45.0,
+      "avg_value_score": 54.12,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Rhode Island",
+      "customers": 63,
+      "avg_spend": 61.44,
+      "pct_promo": 40.0,
+      "avg_value_score": 49.81,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "South Carolina",
+      "customers": 76,
+      "avg_spend": 58.41,
+      "pct_promo": 50.0,
+      "avg_value_score": 46.79,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "South Dakota",
+      "customers": 70,
+      "avg_spend": 60.51,
+      "pct_promo": 37.0,
+      "avg_value_score": 47.94,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Tennessee",
+      "customers": 77,
+      "avg_spend": 61.97,
+      "pct_promo": 36.0,
+      "avg_value_score": 52.84,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Texas",
+      "customers": 77,
+      "avg_spend": 61.19,
+      "pct_promo": 36.0,
+      "avg_value_score": 49.59,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Utah",
+      "customers": 71,
+      "avg_spend": 62.58,
+      "pct_promo": 46.0,
+      "avg_value_score": 49.1,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Vermont",
+      "customers": 85,
+      "avg_spend": 57.18,
+      "pct_promo": 39.0,
+      "avg_value_score": 46.88,
+      "opportunity_type": "Underleveraged"
+    },
+    {
+      "Location": "Virginia",
+      "customers": 77,
+      "avg_spend": 62.88,
+      "pct_promo": 38.0,
+      "avg_value_score": 49.71,
+      "opportunity_type": "Organic High-Traction"
+    },
+    {
+      "Location": "Washington",
+      "customers": 73,
+      "avg_spend": 63.33,
+      "pct_promo": 44.0,
+      "avg_value_score": 49.38,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "West Virginia",
+      "customers": 81,
+      "avg_spend": 63.88,
+      "pct_promo": 49.0,
+      "avg_value_score": 48.75,
+      "opportunity_type": "Discount-Propped"
+    },
+    {
+      "Location": "Wisconsin",
+      "customers": 75,
+      "avg_spend": 55.95,
+      "pct_promo": 48.0,
+      "avg_value_score": 46.88,
+      "opportunity_type": "Low-Priority"
+    },
+    {
+      "Location": "Wyoming",
+      "customers": 71,
+      "avg_spend": 60.69,
+      "pct_promo": 42.0,
+      "avg_value_score": 51.48,
+      "opportunity_type": "Organic High-Traction"
+    }
+  ],
+  "categories": [
+    {
+      "Category": "Accessories",
+      "customers": 1240,
+      "avg_tenure": 25.73,
+      "avg_order": 59.84,
+      "pct_promo": 44.0,
+      "role": "Retention Category"
+    },
+    {
+      "Category": "Clothing",
+      "customers": 1737,
+      "avg_tenure": 25.2,
+      "avg_order": 60.03,
+      "pct_promo": 42.0,
+      "role": "Entry-Point Category"
+    },
+    {
+      "Category": "Footwear",
+      "customers": 599,
+      "avg_tenure": 25.23,
+      "avg_order": 60.26,
+      "pct_promo": 43.0,
+      "role": "Entry-Point Category"
+    },
+    {
+      "Category": "Outerwear",
+      "customers": 324,
+      "avg_tenure": 24.96,
+      "avg_order": 57.17,
+      "pct_promo": 44.0,
+      "role": "Entry-Point Category"
+    }
+  ],
+  "summary": {
+    "total_customers": 3900,
+    "avg_promo_dependency_rate": 43.0,
+    "organic_high_value": 1124,
+    "avg_satisfaction": 3.75
+  }
+}
