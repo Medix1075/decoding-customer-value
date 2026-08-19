@@ -12,6 +12,33 @@
 
 ---
 
+## Live Dashboard
+
+### 📊 Power BI Executive Dashboard
+
+**[Open the Live Power BI Dashboard →](https://app.powerbi.com/links/tt4MY00am1?ctid=38f62926-7559-4aef-84ae-cb5e172406fb&pbi_source=linkShare)**
+
+The Power BI report provides the executive-facing view of the same customer-value analytics used throughout this project.
+
+**Dashboard pages:**
+
+1. **Executive Customer Value** — KPI scorecard, customer pyramid, value distribution, tenure and promo dependency.
+2. **Promo Economics** — organic vs. discount-driven value, dependency, tenure and promotional reduction candidates.
+3. **Geographic Opportunity** — state-level spend, promo reliance, customer concentration and opportunity classification.
+4. **Category & Customer Profile** — entry-point vs. retention categories and the demographic/behavioral profile of high-value customers.
+
+> **Note:** The supplied Power BI URL is a Power BI share link. If a public `Publish to web` URL is required for unauthenticated recruiter access, publish the report through Power BI Service and replace this link with the generated `https://app.powerbi.com/view?r=...` URL.
+
+### Existing interactive dashboard
+
+The repository also contains a fully working browser-based Founder Dashboard using the same engineered customer data:
+
+**[Open the interactive Founder Dashboard](dashboard/founder_dashboard.html)**
+
+It requires no server or build step when opened locally.
+
+---
+
 ## The problem
 
 A direct-to-consumer fashion brand — clothing, footwear, accessories, outerwear, no physical stores, no third-party retail — has grown to ~3,900 customers on the strength of a promotional discount program. It has never built a structured way to understand its customers beyond surface-level sales totals, and it can't currently answer:
@@ -34,46 +61,15 @@ This repository is the full answer path: raw data → engineered features → SQ
 | 4 | Promo strategy restructuring | `docs/RETENTION_PLAYBOOK.md` §1 |
 | 5 | Ideal customer profile & acquisition | `docs/RETENTION_PLAYBOOK.md` §2 |
 
----
-
-## Live Dashboard
-
-### Power BI Executive Dashboard
-
-**Power BI publishing package:** [`powerbi/`](powerbi/)
-
-> **Live Power BI URL:** `POWER_BI_LIVE_URL`
->
-> The final public Power BI URL must be generated from an authenticated Power BI Service workspace using **Publish to web**. GitHub access does not provide Power BI tenant authentication, so a Power BI URL cannot be legitimately generated or fabricated from this repository alone. The repository now contains the complete Power BI data source specification, DAX semantic measures, executive theme, page architecture and publishing instructions.
-
-### Existing interactive dashboard
-
-The repository also contains a fully working browser-based Founder Dashboard using the same engineered customer data:
-
-**[Open the interactive Founder Dashboard](dashboard/founder_dashboard.html)**
-
-It requires no server or build step when opened locally.
-
----
-
 ## Dashboard design
 
-The Power BI implementation is designed as a four-page executive analytics product:
+The Power BI implementation is designed as a four-page executive analytics product with cross-filtering through customer, category, geography, season, subscription and value-tier dimensions. Customer-level drill-through is specified for `Customer ID`, purchase behavior, annualized value, value score and promotion flags.
 
-1. **Executive Customer Value** — KPI scorecard, customer pyramid, value distribution, tenure and promo dependency.
-2. **Promo Economics** — organic vs. discount-driven value, dependency, tenure and candidates for promotional reduction.
-3. **Geographic Opportunity** — state-level spend, promo reliance, customer concentration and opportunity classification.
-4. **Category & Customer Profile** — entry-point vs. retention categories and the demographic/behavioral profile of high-value customers.
-
-All pages support cross-filtering through customer, category, geography, season, subscription and value-tier dimensions. Customer-level drill-through is specified for `Customer ID`, purchase behavior, annualized value, value score and promotion flags.
-
-The implementation files are:
+Implementation assets:
 
 - `powerbi/CustomerValue_DAX.dax` — semantic measures
 - `powerbi/customer_value_theme.json` — executive visual theme
 - `powerbi/README.md` — page-by-page build and publishing specification
-
----
 
 ## Dashboard preview
 
@@ -83,7 +79,7 @@ The browser-based Founder Dashboard is powered by `dashboard/dashboard_data.json
 
 ## Headline findings
 
-- **43.0%** of the customer base is promo-dependent, but promo dependency **does not correlate with tenure** — organic and discount-driven customers show nearly identical average order counts in every value tier. The discount program is not what's building loyalty.
+- **43.0%** of the customer base is promo-dependent, but promo dependency **does not correlate with tenure** — organic and discount-driven customers show nearly identical average order counts in every value tier.
 - The top 4.8% of customers (**Platinum tier**, 187 people) drive an estimated **$3,051/year** in annualized value each — 25.6x the Bronze tier — and are disproportionately not discount-dependent.
 - **Accessories** is the brand's only true retention category; Clothing, Footwear, and Outerwear skew toward first-time and low-tenure buyers.
 - 13 states show **Organic High-Traction** patterns — above-average spend with below-average promo reliance — signaling real brand pull.
@@ -186,11 +182,9 @@ Six `.sql` files map to the project's core business questions and dashboard pane
 
 ## The Power BI Dashboard
 
-The Power BI version is designed to be the executive-facing presentation layer over the same `customer_features.csv` semantic base. It adds reusable DAX measures, report-level slicers, drill-through, cross-filtering and an executive visual theme.
+The Power BI version is the executive-facing presentation layer over the same customer-value analytics. It adds reusable DAX measures, report-level slicers, drill-through, cross-filtering and an executive visual theme.
 
 **Build assets:** [`powerbi/`](powerbi/)
-
-**Publishing note:** A real public Power BI URL is tenant-generated by Power BI Service. After publishing, replace the `POWER_BI_LIVE_URL` marker above with the actual `https://app.powerbi.com/view?r=...` URL. Do not publish the report publicly if the underlying data is not approved for public disclosure.
 
 ## The retention playbook
 
@@ -206,7 +200,7 @@ Two recommendations, each stating the segment, trigger behavior, phased rollout 
 - No transaction-level timestamps exist in the source data, so tenure and value metrics are proxies built from `Previous Purchases` and stated purchase cadence.
 - Margin estimates use an assumed average discount rate; replace with real category-level gross margins before external use.
 - Category role is computed at whole-base level and does not model cross-category purchase sequencing.
-- The Power BI report URL is intentionally not fabricated; it must come from the user's authenticated Power BI Service workspace.
+- The supplied Power BI share URL is retained as provided; a public `Publish to web` URL must be generated by Power BI Service if unauthenticated public access is required.
 
 ## Tech stack
 
